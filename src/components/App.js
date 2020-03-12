@@ -79,9 +79,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <button onClick={this.handleButton}>{this.state.filtered ? 'Unfilter Greased Pigs' : 'Filter Greased Pigs'}</button>
-        <button onClick={this.handleNameButton}>Sort By Name</button>
-        <button onClick={this.handleWeightButton}>Sort By Weight</button>
+        <button className="ui secondary button" onClick={this.handleButton}>{this.state.filtered ? 'Unfilter Greased Pigs' : 'Filter Greased Pigs'}</button>
+        <button className="ui secondary button" onClick={this.handleNameButton}>Sort By Name</button>
+        <button className="ui secondary button" onClick={this.handleWeightButton}>Sort By Weight</button>
         <Nav />
         <HogIndex hogs={this.state.hogList} />
       </div>
